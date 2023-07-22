@@ -44,7 +44,7 @@
 #include <QDir>
 #include "minecraft/launch/MinecraftServerTarget.h"
 
-const std::unordered_set<QString> MANAGED_AGENTS = {"moe.yushi:authlibinjector"};
+const std::unordered_set<std::string> MANAGED_AGENTS = {"moe.yushi:authlibinjector"};
 
 class ModFolderModel;
 class ResourceFolderModel;

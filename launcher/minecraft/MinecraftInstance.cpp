@@ -392,7 +392,7 @@ QStringList MinecraftInstance::extraArguments()
     auto agents = m_components->getProfile()->getAgents();
     for (auto agent : agents)
     {
-        if (MANAGED_AGENTS.find(agent->library()->artifactPrefix()) != MANAGED_AGENTS.end()) {
+        if (MANAGED_AGENTS.find(agent->library()->artifactPrefix().toStdString()) != MANAGED_AGENTS.end()) {
             continue;
         }
         QStringList jar, temp1, temp2, temp3;
